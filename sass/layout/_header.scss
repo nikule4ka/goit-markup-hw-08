@@ -10,13 +10,9 @@
   border-top: none;
 }
 
-.main-header {
-  display: flex;
-  align-items: center;
-}
 
 .site-nav {
-  display: flex;
+ 
   margin-left: auto;
 
   font-weight: 500;
@@ -38,7 +34,6 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    display: flex;
     padding-top: 31px;
     padding-bottom: 31px;
 

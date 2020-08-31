@@ -82,12 +82,29 @@ textarea {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 .logo {
@@ -123,19 +140,7 @@ textarea {
   border-top: none;
 }
 
-.main-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
@@ -154,9 +159,6 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 31px;
   padding-bottom: 31px;
   position: relative;
@@ -187,9 +189,6 @@ textarea {
 
 .contacts {
   color: #757575;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -282,17 +281,8 @@ textarea {
 }
 
 .footer-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 44px;
   height: 44px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 50%;
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -312,13 +302,7 @@ textarea {
 
 .bg-footer {
   background-color: #2f303a;
-  height: 252px;
-}
-
-.bg-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
 }
 
 .address-footer {
@@ -336,9 +320,6 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 9px;
 }
 
 .footer-contacts {
@@ -347,33 +328,10 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  display: inline-block;
-  margin-bottom: 9px;
-}
-
-.container .join {
-  padding-top: 72px;
-  padding-left: 69px;
-}
-
-.links.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.sigh {
-  padding-top: 72px;
-  padding-left: 94px;
 }
 
 .join-us {
   color: #ffffff;
-  display: block;
-  margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -381,23 +339,7 @@ textarea {
   text-transform: uppercase;
 }
 
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-label {
-  display: inline-block;
-  margin-right: 12px;
-}
-
 .footer-input {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 358px;
-  height: 50px;
-  padding: 12px 0px 12px 16px;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -419,7 +361,6 @@ textarea {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  display: block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -436,29 +377,26 @@ textarea {
   text-transform: uppercase;
 }
 
-section {
+.section {
   padding-bottom: 94px;
 }
 
-section.features {
+.section.features {
   padding-top: 94px;
 }
 
-.about-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 767px) {
+  .about-us .item {
+    margin-bottom: 30px;
+  }
 }
 
-.about-us .item {
-  margin-right: 30px;
-}
-
-.about-us .title {
+.title {
   color: #212121;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -469,6 +407,9 @@ section.features {
 }
 
 .img-about {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,8 +419,6 @@ section.features {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
-  height: 120px;
   background: #f5f4fa;
 }
 
@@ -493,6 +432,12 @@ section.features {
 .title {
   margin-top: 30px;
   margin-bottom: 10 px;
+}
+
+@media screen and (max-width: 1170px) {
+  .section.tasks {
+    display: none;
+  }
 }
 
 .section-title {
@@ -518,18 +463,6 @@ section.features {
           align-items: center;
 }
 
-.work-list.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.work-list.list .item {
-  width: calc((100%-60px) / 3);
-  margin-right: 30px;
-  position: relative;
-}
-
 .section-utilities {
   position: absolute;
   bottom: 0;
@@ -538,25 +471,14 @@ section.features {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.section.list.uttilities .item:last-child {
-  margin-right: 0px;
-}
-
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
-.our-team.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .our-team.list .item {
   background-color: #ffffff;
-  display: block;
   width: calc((100%-90px) / 4);
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -588,17 +510,8 @@ section.features {
 }
 
 .box-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 44px;
   height: 44px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 50%;
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -617,21 +530,12 @@ section.features {
   padding-bottom: 94px;
 }
 
-.section.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .section .item.clients {
   width: calc((100% - 150px) / 6);
   margin-right: 30px;
 }
 
 .company {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 170px;
   height: 90px;
   -webkit-box-align: center;

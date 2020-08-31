@@ -1,9 +1,7 @@
 .footer-media {
-  display: flex;
   width: 44px;
   height: 44px;
-  align-items: center;
-  justify-content: center;
+
   border-radius: 50%;
 
   fill: #ffffff;
@@ -29,13 +27,7 @@
 
 .bg-footer {
   background-color: $bg-color-footer;
-  height: 252px;
-}
-
-.bg-footer {
-  .container {
-  display: flex;
-}
+  width: 100%;
 }
 
 .address-footer {
@@ -54,10 +46,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 9px;
 }
 
 .footer-contacts {
@@ -66,33 +54,12 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-
-  display: inline-block;
-  margin-bottom: 9px;
-}
-
-.container {
-  .join {
-  padding-top: 72px;
-  padding-left: 69px;
-}
-}
-
-.links.list {
-  display: flex;
-  justify-content: center;
 }
 
 // footer join-us
-.sigh {
-  padding-top: 72px;
-  padding-left: 94px;
-}
 
 .join-us {
   color: $primary-white-color;
-  display: block;
-  margin-bottom: 20px;
 
   font-weight: bold;
   font-size: 14px;
@@ -101,20 +68,7 @@
   text-transform: uppercase;
 }
 
-.footer-form {
-  display: flex;
-}
-
-.footer-label {
-  display: inline-block;
-  margin-right: 12px;
-}
-
 .footer-input {
-  box-sizing: border-box;
-  width: 358px;
-  height: 50px;
-  padding: 12px 0px 12px 16px;
   color: $primary-white-color;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
