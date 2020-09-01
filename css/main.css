@@ -141,10 +141,6 @@ textarea {
   display: inline-block;
 }
 
-.logo.white {
-  color: #ffffff;
-}
-
 .page-header {
   margin-left: auto;
   margin-right: auto;
@@ -296,9 +292,79 @@ textarea {
   color: #2196f3;
 }
 
+.bg-footer {
+  background-color: #2f303a;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.address-footer {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.address-footer .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address-footer .logo.white {
+  color: #ffffff;
+}
+
+.address-footer .address {
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  margin: 8px;
+}
+
+.address-footer .footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.join {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+
+.join-us {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item-links-footer {
+  display: block;
+  margin-right: 10px;
+}
+
 .footer-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 44px;
   height: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -312,50 +378,11 @@ textarea {
   fill: #ffffff;
 }
 
-.button-footer .send {
-  margin-left: 10px;
-}
-
-.bg-footer {
-  background-color: #2f303a;
-  width: 100%;
-}
-
-.address-footer {
-  padding-top: 60px;
-}
-
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.address {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-}
-
-.footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-}
-
-.join-us {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .footer-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 12px 0px 12px 16px;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -366,6 +393,18 @@ textarea {
 
 .footer-input:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.button-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button-footer .send {
+  margin-left: 10px;
 }
 
 .hero {
@@ -536,6 +575,15 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1170px) {
+  .our-team.list {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .our-team.list .item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -552,6 +600,13 @@ textarea {
 @media screen and (min-width: 768px) {
   .our-team.list .item {
     width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .our-team.list .item {
+    width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }
@@ -614,25 +669,47 @@ textarea {
   padding-top: 60px;
 }
 
-.clients.list {
-  margin: -15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (max-width: 768px) {
+  .clients.list {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-.clients.list .item.clients {
-  width: calc((100% - 4 * 15px) / 2);
-  margin: 15px;
+@media screen and (min-width: 768px) {
+  .clients.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clients.list .item.clients {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients.list .item.clients {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
 }
 
 .company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 90px;
   -webkit-box-align: center;
       -ms-flex-align: center;

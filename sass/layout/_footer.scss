@@ -1,7 +1,74 @@
+.bg-footer {
+  background-color: $bg-color-footer;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.address-footer {
+  padding-top: 60px;
+  text-align: center;
+
+  .logo-footer {
+    display: inline-block;
+
+    margin-bottom: 20px;
+  }
+
+  .logo.white {
+    color: $primary-white-color;
+  }
+
+  .address {
+    color: $primary-white-color;
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    margin: 8px;
+  }
+
+  .footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+  }
+}
+
+// footer join-us
+
+.join {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+
+.join-us {
+  color: $primary-white-color;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item-links-footer {
+  display: block;
+  margin-right: 10px;
+}
+
 .footer-media {
+  display: flex;
   width: 44px;
   height: 44px;
-
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 
   fill: #ffffff;
@@ -19,56 +86,11 @@
   }
 }
 
-.button-footer {
-  .send {
-    margin-left: 10px;
-  }
-}
-
-.bg-footer {
-  background-color: $bg-color-footer;
-  width: 100%;
-}
-
-.address-footer {
-  padding-top: 60px;
-}
-
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.address {
-  color: $primary-white-color;
-
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-}
-
-.footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
-}
-
-// footer join-us
-
-.join-us {
-  color: $primary-white-color;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .footer-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 12px 0px 12px 16px;
   color: $primary-white-color;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -77,5 +99,15 @@
 
   &:hover {
     border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-footer {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+
+  .send {
+    margin-left: 10px;
   }
 }

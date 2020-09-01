@@ -11,6 +11,10 @@
     flex-wrap: wrap;
   }
 
+  @media screen and (min-width: 1170px) {
+    margin: -15px;
+    display: flex;
+  }
   .item {
     &:not(:last-child) {
       @media screen and (max-width: 767px) {
@@ -20,6 +24,11 @@
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
     }
 
