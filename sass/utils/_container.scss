@@ -4,12 +4,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  position: relative;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
   @media screen and (min-width: 768px) {
     width: 768px;
   }
@@ -17,4 +11,26 @@
   @media screen and (min-width: 1170px) {
     width: 1170px;
   }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section {
+  padding-bottom: 60px;
+}
+
+.section-title {
+  color: $first-title-text-color;
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
