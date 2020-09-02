@@ -2,12 +2,15 @@
   background-color: $bg-color-footer;
   width: 100%;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .tablet {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -45,7 +48,6 @@
 }
 
 .address-footer {
-  padding-top: 60px;
   text-align: center;
 
   .logo-footer {
@@ -61,15 +63,11 @@
 
 // footer join-us
 
-.join {
+.sign {
+  width: 450px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 60px;
-
-  @media screen and (max-width: 1169px) and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .join-us {
