@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
-   
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -83,10 +83,9 @@
             <a href="">
               <div class="product-thumb">
                 <img
-                  
                   src="./images/portfolio/tehcnocryak-1.jpg"
                   alt="проект1"
-                  width="370"
+                  width="450"
                   height="294"
                 />
 
@@ -110,8 +109,8 @@
                 <img
                   src="./images/portfolio/poster-2.jpg"
                   alt="проект2"
-                  width="370"
-                  height="294"                 
+                  width="450"
+                  height="294"
                 />
                 <p class="text-proects">
                   Технокряк это современная площадка распространения
@@ -132,7 +131,7 @@
                 <img
                   src="./images/portfolio/restaurant-3.jpg"
                   alt="проект3"
-                  width="370"
+                  width="450"
                   height="294"
                 />
 
@@ -155,7 +154,7 @@
                 <img
                   src="./images/portfolio/prime-4.jpg"
                   alt="проект4"
-                  width="370"
+                  width="450"
                   height="294"
                 />
 
@@ -178,9 +177,9 @@
                 <img
                   src="./images/portfolio/boxes-5.jpg"
                   alt="проект5"
-                  width="370"
+                  width="450"
                   height="294"
-                  />
+                />
 
                 <p class="text-proects">
                   Технокряк это современная площадка распространения
@@ -201,9 +200,9 @@
                 <img
                   src="./images/portfolio/noborders-6.jpg"
                   alt="проект6"
-                  width="370"
+                  width="450"
                   height="294"
-                  />
+                />
 
                 <p class="text-proects">
                   Технокряк это современная площадка распространения
@@ -224,7 +223,7 @@
                 <img
                   src="./images/portfolio/limited-edition-7.jpg"
                   alt="проект7"
-                  width="370"
+                  width="450"
                   height="294"
                 />
 
@@ -247,7 +246,7 @@
                 <img
                   src="./images/portfolio/lab-8.jpg"
                   alt="проект8"
-                  width="370"
+                  width="450"
                   height="294"
                 />
 
@@ -270,7 +269,7 @@
                 <img
                   src="./images/portfolio/buisness-9.jpg"
                   alt="проект9"
-                  width="370"
+                  width="450"
                   height="294"
                 />
 
@@ -293,27 +292,31 @@
     <!-- footer -->
 
     <footer class="bg-footer">
-      <div class="container">
+      <div class="container tablet">
         <div class="address-footer">
           <!-- логотип компании -->
           <a href="./" class="logo-footer">
             <span class="logo main">Web</span>
             <span class="logo white">Studio</span>
           </a>
-          <br />
 
           <!-- e-mail and phone -->
-          <address>
+          <address class="full-address">
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-            <br />
 
-            <a href="mailto:info@example.com" class="footer-contacts"
+            <a
+              href="mailto:info@example.com"
+              aria-label="Отправить письмо"
+              class="footer-contacts"
               >info@example.com</a
             >
-            <br />
-            <a href="tel:+380991111111" class="footer-contacts"
+
+            <a
+              href="tel:+380991111111"
+              aria-label="Позвонить"
+              class="footer-contacts"
               >+38 099 111 11 11</a
-            ><br />
+            >
           </address>
         </div>
 
@@ -322,28 +325,28 @@
           <b class="join-us">присоединяйтесь</b>
 
           <ul class="links list">
-            <li class="item-links">
+            <li class="item-links-footer">
               <a class="footer-media" href="" aria-label="ссылка на Instagram">
                 <svg class="" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-links">
+            <li class="item-links-footer">
               <a class="footer-media" href="" aria-label="ссылка на Twitter">
                 <svg class="" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-links">
+            <li class="item-links-footer">
               <a class="footer-media" href="" aria-label="ссылка на Facebook">
                 <svg class="" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-links">
+            <li class="item-links-footer">
               <a class="footer-media" href="" aria-label="ссылка на linkedin">
                 <svg class="" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
@@ -354,11 +357,11 @@
         </div>
 
         <!-- подписка -->
-        <div class="sigh">
+        <div class="sign">
           <b class="join-us">подпишитесь на рассылку</b>
           <form class="footer-form">
             <label class="footer-label">
-              <input type="email" class="footer-input" placeholder="E-mail">
+              <input type="email" class="footer-input" placeholder="E-mail" />
             </label>
             <button type="button" class="button-footer">
               Подписаться
@@ -367,6 +370,8 @@
               </svg>
             </button>
           </form>
-        </footer>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
