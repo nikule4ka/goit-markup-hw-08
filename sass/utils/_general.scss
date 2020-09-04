@@ -8,7 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   background-color: $primary-white-color;
   color: $primary-text-color;
@@ -32,8 +31,12 @@ textarea {
   resize: none;
 }
 
-.project-img {
-  @media screen and (min-width: 1170px) {
-    display: block;
-  }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+
+// * {
+//   outline: 1px solid tomato;
+// }

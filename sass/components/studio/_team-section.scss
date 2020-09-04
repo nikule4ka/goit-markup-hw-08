@@ -5,13 +5,13 @@
 }
 
 .our-team.list {
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet-landscape) {
     margin: -15px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1170px) {
+  @include for-size(desktop) {
     margin: -15px;
     display: flex;
   }
@@ -22,12 +22,12 @@
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
 
-    @media screen and (min-width: 1170px) {
+    @include for-size(desktop) {
       width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
     }

@@ -1,14 +1,19 @@
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+
+  @include for-size(tablet-landscape) {
     width: 768px;
   }
 
-  @media screen and (min-width: 1170px) {
+  @include for-size(desktop) {
     width: 1170px;
   }
 }
