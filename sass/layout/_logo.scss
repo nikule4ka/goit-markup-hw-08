@@ -1,24 +1,33 @@
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-
+  font-size: 24px;
   line-height: 1.19;
   text-decoration: none;
 
-  @media screen and (max-width: 1170px) {
-    font-size: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   @include for-size(desktop) {
     font-size: 26px;
   }
 
-  &.main {
+  & .main {
     color: $accent-color;
   }
-  &.second {
+  & .black {
     color: $second-logo-color;
-    margin-right: 85px;
+
     display: inline-block;
+
+    @include for-size(tablet-landscape) {
+      margin-right: 0;
+    }
+
+    @include for-size(desktop) {
+      margin-right: 85px;
+    }
   }
 }

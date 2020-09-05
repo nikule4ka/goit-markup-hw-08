@@ -18,38 +18,47 @@
   <header class="page-header">
     <div class="container main-header">
       <!-- логотип компании -->
-      <a href="./" >
-        <span class="logo main">Web</span>
-        <span class="logo second">Studio</span>
+      <a href="./" class="logo">
+        <span class="main">Web</span>
+        <span class="black">Studio</span>
       </a>
 
-      <!-- главная навигация -->
-      <nav>
+      <!-- menu for mobile -->
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="navigations"
+        aria-label="Мобильное меню" data-menu-button>
+        <svg width="40px" height="40px">
+          <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+          <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+        </svg>
+      </button>
+
+  
+      <nav class="menu-navigation" id="menu-navigation" data-menu>
         <ul class="site-nav list">
-          <li class="item">
+          <li class="menu">
             <a href="./index.html" class="link current">Студия</a>
           </li>
-          <li class="item">
+          <li class="menu">
             <a href="./portfolio.html"  class="link">Портфолио</a>
           </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
+          <li class="menu"><a href="" class="link">Контакты</a></li>
         </ul>
-      </nav>
-
+      
       <!-- adress -->
-      <address class="site-nav">
+      <address class="auth-nav">
         <a href="mailto:info@devstudio.com" aria-label="Написать письмо" class="contacts">
-          <svg class="icon-contacts">
-            <use xlink:href="./images/sprite.svg#email"></use>
+          <svg aria-label="Иконка письмо" class="icon-contacts">
+            <use href="./images/sprite.svg#email"></use>
           </svg>
           info@devstudio.com
         </a>
         <a href="tel:+380961111111" aria-label="Позвонить" class="contacts">
-          <svg class="icon-contacts">
+          <svg aria-label="Иконка телефона" class="icon-contacts">
             <use xlink:href="./images/sprite.svg#smartphone"></use>
           </svg>
           +38 096 111 11 11</a>
       </address>
+      </nav>
     </div>
   </header>
 
@@ -76,7 +85,8 @@
         <ul class="about-us list">
           <li class="item">
             <div class="img-about">
-              <svg class="icon" width="70" height="70">
+              <svg class="icon" width="70" height="70" 
+              aria-label="Иконка Антенна">
                 <use xlink:href="./images/sprite.svg#antenna"></use>
               </svg>
             </div>
@@ -88,7 +98,7 @@
           </li>
           <li class="item">
             <div class="img-about">
-              <svg class="icon" width="70" height="70">
+              <svg aria-label="Иконка часы" class="icon" width="70" height="70">
                 <use xlink:href="./images/sprite.svg#clock"></use>
               </svg>
             </div>
@@ -100,7 +110,7 @@
           </li>
           <li class="item">
             <div class="img-about">
-              <svg class="icon" width="70" height="70">
+              <svg class="icon" width="70" height="70" aria-label="Иконка диаграмма">
                 <use xlink:href="./images/sprite.svg#diagram"></use>
               </svg>
             </div>
@@ -112,7 +122,8 @@
           </li>
           <li class="item">
             <div class="img-about">
-              <svg class="icon" width="70" height="70">
+              <svg class="icon" width="70" height="70" 
+              aria-label="Иконка астронавт">
                 <use xlink:href="./images/sprite.svg#astronaut"></use>
               </svg>
             </div>
@@ -169,28 +180,28 @@
             <ul class="links list">
               <li class="item-links">
                 <a class="box-media" href="https://www.instagram.com/" aria-label="ссылка на Instagram">
-                  <svg class="instagram" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка инстаграм">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://twitter.com/" aria-label="ссылка на Twitter">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка твитер">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://www.facebook.com/" aria-label="ссылка на Facebook">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка фейсбук">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://www.linkedin.com/" aria-label="ссылка на linkedin">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка линкедн">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -205,28 +216,28 @@
             <ul class="links list">
               <li class="item-links">
                 <a class="box-media" href="https://www.instagram.com/" aria-label="ссылка на Instagram">
-                  <svg class="" width="20" height="20">
+                  <svg class="" width="20" height="20" aria-label="Иконка инстаграм">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://twitter.com/" aria-label="ссылка на Twitter">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка твитер">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://www.facebook.com/" aria-label="ссылка на Facebook">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка фейсбук">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li class="item-links">
               <li class="item-links">
                 <a class="box-media" href="https://www.linkedin.com/" aria-label="ссылка на linkedin">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка линкедн">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -242,28 +253,28 @@
             <ul class="links list">
               <li class="item-links">
                 <a class="box-media" href="https://www.instagram.com/" aria-label="ссылка на Instagram">
-                  <svg width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка инстаграм">
                     <use href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://twitter.com/" aria-label="ссылка на Twitter">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка твитер">
                     <use href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://www.facebook.com/" aria-label="ссылка на Facebook">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка фейсбук">
                     <use href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="item-links">
                 <a class="box-media" href="https://www.linkedin.com/" aria-label="ссылка на linkedin">
-                  <svg class="" width="20" height="20">
+                  <svg width="20" height="20" aria-label="Иконка линкедн">
                     <use href="./images/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -375,9 +386,9 @@
     <div class="container tablet">
       <div class="address-footer">
         <!-- логотип компании -->
-        <a href="./" class="logo-footer">
-          <span class="logo main">Web</span>
-          <span class="logo white">Studio</span>
+        <a href="./" class="logo">
+          <span class="main">Web</span>
+          <span class="white">Studio</span>
         </a>
         
 
@@ -503,8 +514,9 @@
   </div>
   
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
-</script>
+
 </body>
 
 </html>

@@ -55,17 +55,18 @@
     text-align: center;
   }
 
-  .logo-footer {
+  .logo {
     display: inline-block;
 
     margin-bottom: 20px;
+
     @include for-size(desktop) {
       display: inline-block;
     }
-  }
 
-  .logo.white {
-    color: $primary-white-color;
+    & .white {
+      color: $primary-white-color;
+    }
   }
 }
 

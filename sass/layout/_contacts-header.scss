@@ -1,21 +1,53 @@
 .contacts {
   color: $primary-text-color;
 
-
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
+
+  display: flex;
   align-items: center;
+  justify-content: center;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @include for-size(tablet-landscape) {
+    font-size: 12px;
+  }
+
   &:hover {
     color: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &:nth-child(2n) {
+      padding-left: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-top: 0;
+    }
+  }
+}
+
+.contacts + .contacts {
+  &:last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -25,10 +57,4 @@
   align-items: center;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.site-nav {
-  .contacts + .contacts {
-    margin-left: 30px;
-  }
 }
