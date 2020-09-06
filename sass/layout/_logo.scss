@@ -25,9 +25,5 @@
     @include for-size(tablet-landscape) {
       margin-right: 0;
     }
-
-    @include for-size(desktop) {
-      margin-right: 85px;
-    }
   }
 }
