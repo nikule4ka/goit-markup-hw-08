@@ -138,16 +138,9 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    padding-top: 26px;
-  }
-}
-
 @media (min-width: 1200px) {
   .logo {
     font-size: 26px;
-    padding-bottom: 26px;
   }
 }
 
@@ -363,7 +356,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .site-nav .link.current::after {
-    bottom: -33px;
+    bottom: -2px;
   }
 }
 
@@ -393,6 +386,8 @@ img {
 @media screen and (min-width: 768px) {
   .auth-nav {
     margin-left: 84px;
+    margin-top: 21px;
+    margin-bottom: 21px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -462,18 +457,18 @@ img {
 }
 
 .contacts + .contacts {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1200px) {
   .contacts + .contacts {
+    margin-bottom: 0;
     margin-top: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
   .contacts + .contacts:last-child {
-    margin-top: 0;
     margin-bottom: 60px;
   }
 }
@@ -1557,12 +1552,6 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.checkbox-label {
-  padding-bottom: 30px;
-  -webkit-transform: translateX(54px);
-          transform: translateX(54px);
 }
 
 .checkbox-title {
