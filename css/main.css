@@ -1325,7 +1325,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (min-width: 779px) {
   .text-proects {
     font-size: 18px;
     padding: 49px 24px;
