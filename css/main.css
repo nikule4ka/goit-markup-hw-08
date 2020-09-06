@@ -141,13 +141,13 @@ img {
 @media screen and (min-width: 768px) {
   .logo {
     padding-top: 26px;
-    padding-bottom: 26px;
   }
 }
 
 @media (min-width: 1200px) {
   .logo {
     font-size: 26px;
+    padding-bottom: 26px;
   }
 }
 
@@ -369,7 +369,7 @@ img {
 
 @media (min-width: 1200px) {
   .site-nav .link.current::after {
-    bottom: -34px;
+    bottom: -2px;
   }
 }
 
@@ -1419,6 +1419,13 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal-title {
   color: #212121;
   margin: 0;
@@ -1553,13 +1560,6 @@ img {
 }
 
 .checkbox-label {
-  position: absolute;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-bottom: 30px;
   -webkit-transform: translateX(54px);
           transform: translateX(54px);

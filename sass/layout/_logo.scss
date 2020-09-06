@@ -7,11 +7,11 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 26px;
-    padding-bottom: 26px;
   }
 
   @include for-size(desktop) {
     font-size: 26px;
+    padding-bottom: 26px;
   }
 
   & .main {
